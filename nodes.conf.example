@@ -1,0 +1,11 @@
+# Memory Sync Node Registry
+# One node per line: name, IP, user, memory_path
+# Lines starting with # are comments
+#
+# Memory path conventions:
+#   Linux:  ~/.claude/projects/-home-<user>/memory/
+#   macOS:  ~/.claude/projects/-Users-<user>/memory/
+
+gpu-server      192.168.1.10    alice       ~/.claude/projects/-home-alice/memory/
+docker-hub      192.168.1.20    alice       ~/.claude/projects/-home-alice/memory/
+macbook         192.168.1.30    alice       ~/.claude/projects/-Users-alice/memory/

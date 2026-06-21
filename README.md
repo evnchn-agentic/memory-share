@@ -62,7 +62,7 @@ Then in any Claude Code session: `/memory-sync --status`
 ## Safety
 
 - **Never touches conversation history** — only the `memory/` subdirectory
-- **Never uses `--delete`** — additive rsync only
+- **Additive by default** — no blanket rsync `--delete`; the only removals are user-confirmed deletions (surfaced, queried, tombstoned), never inferred from an unreachable node
 - **Backs up first-time nodes** before their first sync
 - **AI reads diverged files** before deciding — no silent overwrites
 
